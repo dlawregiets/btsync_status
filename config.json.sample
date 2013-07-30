@@ -1,8 +1,8 @@
 {
-  "username": "user",
-  "password": "pass",
-  "host": "localhost",
-  "port": 8888,
-  "proto": "http",
-  "sleep_interval": 5
+  "username": "user", # username defined in webgui config. optional.
+  "password": "pass", # password defined in webgui config. optional.
+  "host": "localhost", # host of server running btsync. optional. defaults to localhost.
+  "port": 8888, # port of webui. optional. defaults to 8888.
+  "proto": "http", # protocol. optional. defaults to http
+  "sleep_interval": 5 # time, in seconds, for refreshing getting status. optional. defaults to 5 seconds
 }

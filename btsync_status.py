@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import base64
 import json
 import os
@@ -16,12 +16,13 @@ config_file = os.path.dirname(os.path.realpath(__file__)) + '/config.json'
 if len(sys.argv) == 2:
   config_file = sys.argv[1]
 
+config = {}
+
 try:
   with open(config_file, 'r') as f:
     config = json.loads(f.read())
 except IOError, e:
-  print "Could not open file %s for reading." % config_file
-  sys.exit(1)
+  print "Could not open file %s for reading. Using defaults." % config_file
 
 proto = config['proto'] if 'proto' in config else DEFAULT_PROTO
 host = config['host'] if 'host' in config else DEFAULT_HOST
@@ -76,7 +77,7 @@ if token and cookie:
 
           print "  %s: %s%s" % (peer['name'], arrow_status, status)
       print stats['speed']
-      time.sleep(config['sleep_interval'])
+      time.sleep(sleep_interval)
     except KeyboardInterrupt:
       break
 else:
