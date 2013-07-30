@@ -4,7 +4,7 @@ btsync_status
 Command line python script for monitoring your BitTorrent Sync server status.
 
 ## What
-This python script uses the webui for btsync to output the status of folders to a terminal.
+This python script uses the webui for btsync to output the sync status of folders to a terminal.
 
 ## How
 
@@ -30,3 +30,5 @@ Example configuration is in the config.json.example file.
     port: port of webui. optional. defaults to 8888.
     proto: proto for webui. http/https. optional. defaults to http.
     sleep_interval: time to sleep before refreshing status from btsync. optional. defaults to 5 seconds
+
+##
