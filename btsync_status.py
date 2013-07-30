@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import base64
 import json
+import os
 import re
 import sys
 import time
@@ -11,7 +12,7 @@ DEFAULT_PROTO = 'http'
 DEFAULT_HOST = 'localhost'
 DEFAULT_PORT = 8888
 
-config_file = 'config.json'
+config_file = os.path.dirname(os.path.realpath(__file__)) + '/config.json'
 if len(sys.argv) == 2:
   config_file = sys.argv[1]
 
