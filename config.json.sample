@@ -1,0 +1,8 @@
+{
+  "username": "user",
+  "password": "pass",
+  "host": "localhost",
+  "port": 8888,
+  "proto": "http",
+  "sleep_interval": 5
+}
