@@ -1,10 +1,10 @@
 btsync_status
 =============
 
-Command line python script for monitoring your BitTorrent Sync server status.
+Command line python script for monitoring your BitTorrent Sync status.
 
 ## What
-This python script uses the webui for btsync to output the sync status of folders to a terminal.
+This python script uses the webui for btsync to output the sync status of folders to your terminal.
 
 ## How
 
